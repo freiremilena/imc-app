@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { View, TextInput } from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import Calculadora from "../../components/ImcCalc/IMCCalc";
+
+import styles from "./styles";
 
 export default class CalculadoraApp extends Component {
   constructor(props) {
@@ -10,21 +12,23 @@ export default class CalculadoraApp extends Component {
 
   render() {
     return (
-      <View>
+      <View style={styles.container}>
+        <Text style={styles.title}> calcular imc</Text>
+
         <TextInput
-          style={{ height: 60, fontSize: 32, marginTop: 80 }}
+          style={styles.input}
           placeholder="Digite a altura"
-          onChangeText={(altura) =>
-            this.setState({ altura })
-          }
+          onChangeText={(altura) => this.setState({ altura })}
         />
         <TextInput
-          style={{ height: 60, fontSize: 32 }}
+          style={styles.input}
           placeholder="Digite o peso"
-          onChangeText={(peso) =>
-            this.setState({ peso })
-          }
+          onChangeText={(peso) => this.setState({ peso })}
         />
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>okay</Text>
+        </TouchableOpacity>
+
         <Calculadora altura={this.state.altura} peso={this.state.peso} />
       </View>
     );
