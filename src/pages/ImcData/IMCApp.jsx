@@ -13,7 +13,7 @@ export default class CalculadoraApp extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}> calcular imc</Text>
+        <Text style={styles.title}> Calcular IMC</Text>
 
         <TextInput
           style={styles.input}

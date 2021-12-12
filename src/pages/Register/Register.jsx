@@ -7,7 +7,7 @@ export default class Cadastro extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}> cadastro</Text>
+        <Text style={styles.title}> Cadastro</Text>
 
         <TextInput style={styles.input} placeholder="nome" />
         <TextInput style={styles.input} placeholder="idade" />

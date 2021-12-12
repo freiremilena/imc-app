@@ -8,6 +8,9 @@ export default function Home() {
   function navigateToRegister() {
     navigation.navigate("Register");
   }
+  function navigateToAbout() {
+    navigation.navigate("About");
+  }
 
   return (
     <View style={styles.container}>
@@ -21,15 +24,20 @@ export default function Home() {
           navigateToRegister();
         }}
       >
-        <Text style={styles.buttonText}>cadastro</Text>
+        <Text style={styles.buttonText}>Cadastro</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>imc</Text>
+        <Text style={styles.buttonText}>IMC</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>sobre</Text>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => {
+          navigateToAbout();
+        }}
+      >
+        <Text style={styles.buttonText}>Sobre</Text>
       </TouchableOpacity>
     </View>
   );

@@ -3,8 +3,21 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   title: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 24,
     marginBottom: 42,
+  },
+
+  subtitle: {
+    fontSize: 20,
+    fontWeight: "500",
+    marginBottom: 15,
+  },
+
+  txt: {
+    fontSize: 20,
+    fontStyle: "italic",
+    textAlign: "center",
+    margin: 16,
   },
 
   container: {
@@ -12,17 +25,6 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-
-  input: {
-    marginBottom: 12,
-    padding: 14,
-    width: 260,
-    height: 50,
-    color: "#000000",
-    backgroundColor: "#A9A9A9",
-    borderRadius: 4,
-  },
-
   button: {
     display: "flex",
     alignItems: "center",
