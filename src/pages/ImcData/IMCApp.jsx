@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import Calculadora from "../../components/ImcCalc/IMCCalc";
-
+import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
+
+
 
 export default class CalculadoraApp extends Component {
   constructor(props) {

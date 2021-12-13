@@ -7,6 +7,39 @@ export default StyleSheet.create({
     marginBottom: 42,
   },
 
+  titleModal: {
+    fontWeight: "bold",
+    fontSize: 20,
+    marginTop: 26,
+  },
+
+  profileModal: {
+    maxWidth: 200,
+    maxHeight: 200,
+    marginBottom: 40,
+    marginTop: 60,
+    borderRadius: 100,
+  },
+
+  modalContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "rgba(0,0,0,0.2)",
+  },
+
+  modal: {
+    width: 320,
+    height: 580,
+    alignItems: "center",
+    backgroundColor: "#ffffff",
+    borderRadius: 20,
+  },
+
+  modalInformation: {
+    fontSize: 14,
+  },
+
   container: {
     flex: 1,
     alignItems: "center",

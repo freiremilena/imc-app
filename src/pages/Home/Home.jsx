@@ -11,6 +11,9 @@ export default function Home() {
   function navigateToAbout() {
     navigation.navigate("About");
   }
+  function navigateToImcApp() {
+    navigation.navigate("ImcData");
+  }
 
   return (
     <View style={styles.container}>
@@ -27,7 +30,13 @@ export default function Home() {
         <Text style={styles.buttonText}>Cadastro</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity
+        style={styles.button}
+        style={styles.button}
+        onPress={() => {
+          navigateToImcApp();
+        }}
+      >
         <Text style={styles.buttonText}>IMC</Text>
       </TouchableOpacity>
 

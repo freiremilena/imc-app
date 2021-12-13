@@ -3,6 +3,8 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 
+import message from "../../components/ImcMessage/IMCMsg";
+
 export default function Cadastro() {
   const navigation = useNavigation();
   function navigateToHome() {
@@ -10,13 +12,9 @@ export default function Cadastro() {
   }
   return (
     <View style={styles.container}>
-      <Text style={styles.title}> Sobre</Text>
+      <Text style={styles.title}> Resultado</Text>
 
       <Text style={styles.subtitle}>Milena, 22 anos, 8° Design Digital.</Text>
-      <Text style={styles.txt}>
-        "faço projetos como designer UX/UI, ás vezes me aventuro na programação.
-        Essa aplicação foi construída para a disciplina de PDIM"
-      </Text>
 
       <TouchableOpacity style={styles.button}>
         <Text
